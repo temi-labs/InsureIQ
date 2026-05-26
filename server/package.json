@@ -4,6 +4,7 @@
   "private": true,
   "description": "Backend for Insurance Portal",
   "scripts": {
+    "dev": "tsx server.ts",
     "start": "node server.ts"
   }
 }
