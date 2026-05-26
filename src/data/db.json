@@ -1,0 +1,100 @@
+{
+  "users": [
+    {
+      "id": "USR-001",
+      "name": "Admin User",
+      "email": "admin@insureiq.demo",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "USR-002",
+      "name": "Jane Doe",
+      "email": "jane@example.com",
+      "password": "password",
+      "role": "user"
+    }
+  ],
+  "policies": [
+    {
+      "id": "POL-001",
+      "displayId": "POL-001",
+      "userId": "USR-002",
+      "type": "Health Insurance",
+      "provider": "Aetna",
+      "premium": 500,
+      "coverageAmount": 500000,
+      "status": "active",
+      "expiryDate": "2024-12-31",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "POL-002",
+      "displayId": "POL-002",
+      "userId": "USR-002",
+      "type": "Auto Insurance",
+      "provider": "Geico",
+      "premium": 1500,
+      "coverageAmount": 50000,
+      "status": "active",
+      "expiryDate": "2025-06-30",
+      "createdAt": "2024-02-15T00:00:00.000Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "CLM-001",
+      "displayId": "CLM-001",
+      "userId": "USR-002",
+      "policyId": "POL-001",
+      "amount": 1200,
+      "description": "Routine Checkup and Tests",
+      "status": "approved",
+      "date": "2024-03-10T10:00:00.000Z"
+    },
+    {
+      "id": "CLM-002",
+      "displayId": "CLM-002",
+      "userId": "USR-002",
+      "policyId": "POL-002",
+      "amount": 4500,
+      "description": "Vehicle Collision Damage",
+      "status": "pending",
+      "date": "2024-04-12T14:30:00.000Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": "ACT-001",
+      "userId": "USR-002",
+      "message": "User logged in.",
+      "date": "2024-05-15T09:00:00.000Z"
+    },
+    {
+      "id": "ACT-002",
+      "userId": "USR-002",
+      "message": "Created a new claim for Vehicle Collision Damage.",
+      "date": "2024-04-12T14:35:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NOT-001",
+      "userId": "USR-002",
+      "title": "Claim Approved",
+      "message": "Your claim CLM-001 has been approved.",
+      "read": false,
+      "date": "2024-03-11T11:00:00.000Z",
+      "type": "claim"
+    },
+    {
+      "id": "NOT-002",
+      "userId": "USR-002",
+      "title": "Policy Active",
+      "message": "Your new auto insurance policy has been activated.",
+      "read": true,
+      "date": "2024-02-16T08:00:00.000Z",
+      "type": "policy"
+    }
+  ]
+}

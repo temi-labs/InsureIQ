@@ -1,0 +1,6 @@
+{
+  "name": "Insurance Management Portal",
+  "description": "A comprehensive portal for managing insurance policies and claims with role-based access for users and administrators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

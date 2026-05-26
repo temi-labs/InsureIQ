@@ -1,0 +1,9 @@
+{
+  "name": "insurance-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend for Insurance Portal",
+  "scripts": {
+    "start": "node server.ts"
+  }
+}
